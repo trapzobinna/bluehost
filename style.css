@@ -10,6 +10,10 @@ a{
     color: black !important;
 }
 /*navbar and its elements start*/
+.navbarcont{
+    width: 100%;
+    background-color: white;
+}
 .nav-bar{
 background-color: white;
 width: 100%;
@@ -144,6 +148,7 @@ li a{
     transition: width 0.3s;
     width: 0;
     position: absolute;
+
     bottom: -15px;
     left: 0;
 }
@@ -544,48 +549,66 @@ li a{
     
 }
 /*navbar end*/
-.main{
-background-color: #3782e7;
-height: 620px;
-width: 1320px;
-margin-left:15px;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-border-bottom-left-radius: 32px;
-border-bottom-right-radius: 32px;
-position: relative;
+.hero {
+  width: 100%;
+  max-width: 1200px;      /* keeps content from stretching too wide on large screens */
+  margin: 0 auto;         /* centers the hero section */
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid red;  /* optional, for testing layout */
+}
 
-}
-.mainheader{
-    /* border: 2px solid red ; */
-    width: 600px;
-    position: absolute;
-    left: 84px;
-    top: 40px;
-    font-size: 49px;
-    color: white;
-    font-weight: bolder;
+.main {
+  background-color: #3782e7;
+  height: 620px;
+  width: 100%;
+  margin-left: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  position: relative;
 
+  display: flex;
+  flex-wrap: wrap;          /* makes content wrap on smaller screens */
+  justify-content: center;  /* centers horizontally */
+  align-items: center;      /* centers vertically */
+  gap: 20px;                /* optional spacing between child elements */
 }
-.offers{
-    /* border: 2px solid red; */
-    width: 300px;
-    height: 172px;
-    position: absolute;
-    left: 84px;
-    top: 188px;
-    color: white;
-    font-size: 20px;
-    list-style-type: square;
-    line-height: 25px;
-    border-right: 1px solid white;
+
+.mainheader {
+  width: 60%; /* instead of 600px */
+  border: 2px solid red;
+  position: absolute;
+  left: 7%;  /* replaces 84px with a flexible value */
+  top: 5%;
+  font-size: clamp(24px, 4vw, 49px); /* auto resizes font between 24–49px */
+  color: white;
+  font-weight: bolder;
 }
+.offers {
+  /* border: 2px solid red; */
+  width: 25%;                 /* replaces fixed 300px — scales with parent width */
+  min-width: 160px;           /* prevents it from shrinking too small */
+  height: auto;               /* lets height adjust with text */
+  position: absolute;
+  left: 7%;                   /* replaces 84px with flexible spacing */
+  top: 30%;                   /* scales with height of parent */
+  color: white;
+  font-size: clamp(11px, 1.5vw, 20px); /* smoothly resizes text */
+  list-style-type: square;
+  line-height: 1.5; 
+  border-right: 1px solid white;
+  padding-right: 10px;        /* adds a bit of space before border */
+  box-sizing: border-box;
+}
+
 .offers li{
     margin-left: 25px;
     margin-top: 7px;
 }
 .startat{
-    /* border: 2px solid red; */
+    border: 2px solid red;
     width: 200px;
     height: 172px;
     position: absolute;
@@ -615,12 +638,12 @@ position: relative;
     top:370px ;
     left: 90px;
     background-color: #ffd662;
-    width: 185px;
-    height: 60px;
+    width: 15.5%;
+    height: 10%;
     border-radius: 5px;
     box-shadow: none;
     color: #1a4884;
-    font-size: 16px;
+    font-size: clamp(9px, 1.5vw, 16px);
     font-weight: bolder;
     border: none;
     cursor: pointer;
@@ -640,25 +663,36 @@ position: relative;
     top: 4px;
     left: 35px;
 }
-.mainimage{
-    position: absolute;
-    /* border: 2px solid blue; */
-    left: 710px;
-    top: 80px;
-    height: 450px;
-    width: auto;
-
+.mainimage {
+  position: absolute;
+  border: 2px solid blue;
+  left: 54%;                     /* 710px of 1320px ≈ 54% */
+  top: 8%;                       /* replaces 80px with flexible spacing */
+  height: 75%;                   /* already responsive — keep it */
+  width: auto;                   /* keeps proportions */
+  max-width: 40%;                /* prevents it from getting too wide */
+  min-width: 250px;              /* prevents it from shrinking too small */
+  object-fit: contain;           /* ensures image scales cleanly */
 }
-.main2{
-    background-color: #dbf1fc;
-    height: 90px;
-    width: 1320px;
-    position: absolute;
-    bottom: 0;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
 
+.main2 {
+  background-color: #dbf1fc;
+  height: 90px;
+  width: 100%; /* let it stretch with .main */
+  position: absolute;
+  bottom: 0;
+  left: 0; /* make sure it aligns with .main’s left edge */
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  /* ✅ Flex properties */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* center content horizontally */
+  align-items: center;      /* center vertically */
+  gap: 10px;                /* optional: adds spacing between items */
 }
+
 .main2image{
     height: 50px;
     width: auto;
@@ -1714,7 +1748,7 @@ position: relative;
     font-size: 20px;
 }
 .testimony{
-    /* border: 2px solid red; */
+    border: 2px solid red;
     position:absolute;
     width: 850px;
     left: 277px;
@@ -1725,7 +1759,7 @@ position: relative;
     justify-content: space-evenly;
 }
 .test1{
-    /* border: 2px solid green; */
+    border: 2px solid green;
     width: 240px;
     margin-top: 40px;
     height: 500px;
@@ -1756,7 +1790,7 @@ position: relative;
     color: #196bde !important;
 }
 .test2{
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
     width: 240px;
     margin-top: 40px;
     height: 500px;
@@ -1787,7 +1821,7 @@ position: relative;
     color: #196bde !important;
 }
 .test3{
-    /* border: 2px solid aquamarine; */
+    border: 2px solid aquamarine;
     width: 240px;
     margin-top: 40px;
     height: 500px;
