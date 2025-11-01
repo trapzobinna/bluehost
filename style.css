@@ -82,7 +82,7 @@ li a{
     width:100vw;
     height: 350px;
     display: none;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     position: absolute;
     left: -200px;
 }
