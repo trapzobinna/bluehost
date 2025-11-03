@@ -316,13 +316,13 @@ li a{
 }
 .mobile-right {
   position: absolute;
-  top: 32.5px;
+  top: 29px;
   right: 60px;
   display: flex;
   align-items: center;
   /* border: 2px solid blue; */
   justify-content: space-between; /* pushes Login left, Cart right */
-  width: 165px; /* adjust width to control how far apart they are */
+  width: 150px; /* adjust width to control how far apart they are */
   list-style: none;
   z-index: 100;
 }
@@ -2760,13 +2760,16 @@ html, body {
   }
    .opec {
     padding: 20px;
+    border: 2px solid #196bde;
   }
 .opech1 {
     font-size: 20px;
   }
 
   .rating {
-    width: 110px;
+    width: 70px;
+    margin-top: -20px;
+    margin-left: -20px;
   }
 
   .opech1 p {
@@ -2776,6 +2779,7 @@ html, body {
   .users {
     font-size: 14px;
     margin-top: 8px;
+    margin-left: 35px;
   }
 
   .platform {
@@ -2820,6 +2824,8 @@ html, body {
         height: 40px;
         margin-top: 10px;
     }
+    .build-plat, .market-plat, .performance-plat, .security-plat, .enhance-plat {
+        border: 2px solid #196bde;    }
 
     .host-plat p,
     .build-plat p,
