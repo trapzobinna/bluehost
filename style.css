@@ -1,7 +1,6 @@
  * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 /* Prevent horizontal scrolling globally */
 html, body {
@@ -745,32 +744,40 @@ li a{
     transition: all 0.3s ease-in-out;
 }
 
-.pricecards{
-    /* border: 2px solid green; */
-    width: 100%;
-    height: 1400px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.subh{
-    width: 100%;
+.pricecards {
+  width: 100%;
+  position: relative;
   display: flex;
+  flex-direction: column;  /* stack image above cards */
   justify-content: center;
-  margin-bottom: 0;
-  /* border: 2px solid red; */
+  align-items: center;
+  gap: 30px;               /* space between image and cards */
+  margin-top: 50px;        /* space from section above */
 }
-.subheader{
-    width: 130px;
+/* Image container */
+.subh {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;
+  width: 100%;
 }
+
+/* The image itself */
+.subheader {
+  width: 130px;
+  height: auto;
+  display: block;
+}
+
+
 .cards-container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
+  justify-content: center;  /* center cards horizontally */
+  gap: 30px;
+  flex-wrap: wrap;          /* responsive layout */
+  width: fit-content;
 }
+
 
  .star{
     color: green;
@@ -780,15 +787,14 @@ li a{
     left: 605px;
 }
 .card1{
+    position: relative;       /* remove absolute positioning */
+    top: 0;                   /* reset top offsets */
     width: 360px;
-    height: 1200px;
-    border: 1px solid skyblue;
-    position: absolute;
-    left: 100px;
-    top: 140px;
+    height: auto;             /* optional if content grows */
     border-radius: 10px;
+    border: 1px solid skyblue;
 }
-.card1 .box1{
+.box1{
     width: 100%;
     height: 280px;
     /* border: 2px solid blue; */
@@ -877,7 +883,7 @@ li a{
     border: none;
     cursor: pointer;
 }
-.card1 .box2{
+.box2{
     width: 100%;
     height: 300px;
     position: relative;
@@ -900,11 +906,11 @@ li a{
     text-decoration: underline;
     color: black;
 }
-.card1 .box3{
+.box3{
     width: 100%;
     height: 200px;
 }
-.card1 .Security{
+.Security{
     font-size: 16.5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: 20px;
@@ -916,11 +922,11 @@ li a{
     line-height: 30px;
     margin-left: 20px;
 }
-.card1 .box4{
+.box4{
     width: 100%;
     height: 150px;
 }
-.card1 .marketing{
+.marketing{
     font-size: 16.5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: 20px;
@@ -928,11 +934,11 @@ li a{
     position: relative;
     left: -20px;
 }
-.card1 .box5{
+.box5{
     width: 100%;
     height: 250px;
 }
-.card1 .advance{
+.advance{
     font-size: 16.5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: 20px;
@@ -941,13 +947,12 @@ li a{
     left: -20px;
 }
 .card2{
+   position: relative;       /* remove absolute positioning */
+    top: 0;                   /* reset top offsets */
     width: 360px;
-    height: 1240px;
-    border: 0.5px solid black;
-    position: absolute;
-    left: 390px;
-    top: -40px;
+    height: auto;             /* optional if content grows */
     border-radius: 10px;
+    border: 1px solid black;
 }
 .topbar{
     background-color: black;
@@ -964,13 +969,12 @@ li a{
     padding-top: 5px;
 }
 .card3{
+   position: relative;       /* remove absolute positioning */
+    top: 0;                   /* reset top offsets */
     width: 360px;
-    height: 1200px;
-    border: 1px solid skyblue;
-    position: absolute;
-    left: 780px;
-    top: 0;
+    height: auto;             /* optional if content grows */
     border-radius: 10px;
+    border: 1px solid skyblue;
 }  
 .opec {
   width: 100%;
@@ -983,6 +987,7 @@ li a{
   height: auto;            /* let height adjust to content naturally */
   /* display: flex;
   flex-wrap: wrap; */
+  margin-top: 50px;
 }
 .opech1{
      justify-content: center;
@@ -1040,20 +1045,28 @@ li a{
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: -0.75px;
 }
-.plat-section{
-    /* border: 2px solid green; */
-    width: 100%;
-    height: 600px;
-    position: relative;
+.plat-section {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;    /* Stack image + boxes vertically */
+  justify-content: center;   /* Vertical centering inside section */
+  align-items: center;       /* Horizontal centering */
+  gap: 30px;                 /* space between image and boxes */
+  /* border: 2px solid green; */ /* optional for testing */
 }
-.plat-section .card{
-    /* border: 2px solid blue; */
-    width: 800px;
-    height: 400px;
-    position: absolute;
-    left: 400px;
-    top: 40px;
-    border-radius: 10px;
+
+.plat-section .card {
+  width: 800px;
+  height: 400px;
+  border-radius: 10px;
+  position: relative; /* changed from absolute to relative for centering */
+  display: flex;
+  justify-content: center;
+  margin-left: 325px;
+  align-items: center;
+  /* border: 2px solid blue;  */
 }
 .plat-section2{
     /* border: 2px solid purple; */
@@ -1067,6 +1080,7 @@ li a{
     /* font-family: Arial, Helvetica, sans-serif; */
 
 }
+
 .host-plat{
     border-radius: 50px;
     width: 235px;
@@ -1163,24 +1177,27 @@ li a{
     font-size: 20px;
     color: black;
 }
+/* Image wrapper */
 .imgcard {
-    display: flex;
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    height: 400px;
-    border-radius: 10px;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* The main image */
 .imgcard img.manover {
-    width: 400px;
-    height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  width: 400px;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
+
 
 /* The blue right panel */
 .imgcardright {
@@ -1904,7 +1921,7 @@ li a{
     font-size: 20px;
 }
 .testimony{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position:absolute;
     width: 850px;
     left: 277px;
@@ -1915,7 +1932,7 @@ li a{
     justify-content: space-evenly;
 }
 .test1{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 240px;
     margin-top: 40px;
     height: 500px;
@@ -1946,7 +1963,7 @@ li a{
     color: #196bde !important;
 }
 .test2{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     width: 240px;
     margin-top: 40px;
     height: 500px;
@@ -1977,7 +1994,7 @@ li a{
     color: #196bde !important;
 }
 .test3{
-    border: 2px solid aquamarine;
+    /* border: 2px solid aquamarine; */
     width: 240px;
     margin-top: 40px;
     height: 500px;
@@ -2736,7 +2753,7 @@ html, body {
     position: static;          /* stop using absolute positioning */
     width: 90%;                /* responsive width */
     max-width: 360px;          /* don’t exceed original desktop size */
-    height: 2000px;              /* adjust height naturally */
+    height: auto;              /* adjust height naturally */
     border-radius: 10px;
     margin: 0 auto;            /* center the cards */
   }
