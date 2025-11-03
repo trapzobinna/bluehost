@@ -1044,29 +1044,20 @@ li a{
     margin-top: 10px;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: -0.75px;
+}.plat-section{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 600px;
+    position: relative;
 }
-.plat-section {
-  width: 100%;
-  height: 600px;
-  position: relative;
-  display: flex;
-  flex-direction: column;    /* Stack image + boxes vertically */
-  justify-content: center;   /* Vertical centering inside section */
-  align-items: center;       /* Horizontal centering */
-  gap: 30px;                 /* space between image and boxes */
-  /* border: 2px solid green; */ /* optional for testing */
-}
-
-.plat-section .card {
-  width: 800px;
-  height: 400px;
-  border-radius: 10px;
-  position: relative; /* changed from absolute to relative for centering */
-  display: flex;
-  justify-content: center;
-  margin-left: 325px;
-  align-items: center;
-  /* border: 2px solid blue;  */
+.plat-section .card{
+    /* border: 2px solid blue; */
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    left: 400px;
+    top: 40px;
+    border-radius: 10px;
 }
 .plat-section2{
     /* border: 2px solid purple; */
