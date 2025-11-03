@@ -2857,6 +2857,601 @@ html, body {
     padding: 30px 20px;
     text-align: center;
     gap: 20px;
-    
+  }
+
+  /* Remove absolute positioning so flexbox can arrange them */
+  .oam,
+  .msp,
+  .expcustom,
+  .expsoln,
+  .laptop1 {
+    position: static;
+  }
+
+  .oam {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .msp {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.3;
+    width: 100%;
+  }
+
+  .expcustom {
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+
+  .expsoln {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    margin: 10px auto;
+  }
+
+  .laptop1 {
+    width: 85%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+   .sectionthree {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  /* Remove absolute positions for stacking */
+  .site2,
+  #oam2,
+  #msp2,
+  #expcustom2,
+  #expsoln2 {
+    position: static;
+  }
+
+  .site2 {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+  }
+
+  #oam2 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+
+  #msp2 {
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    line-height: 1.3;
+  }
+
+  #expcustom2 {
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+
+  #expsoln2 {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    margin: 10px auto;
+  }
+  .sectionfour {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  /* Remove absolute positioning for stacking layout */
+  .site3,
+  #oam3,
+  #msp3,
+  #expcustom3,
+  #expsoln3 {
+    position: static;
+  }
+
+  .site3 {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  #oam3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+
+  #msp3 {
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    line-height: 1.3;
+  }
+
+  #expcustom3 {
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+
+  #expsoln3 {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    margin: 10px auto;
+  }
+.grid {
+    transform: scale(0.32); 
+    transform-origin: top center;
+     /* border: 2px solid red; */
+     margin-top: 50px;
+     }
+
+
+ .perfectplan {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 30px 20px;
+    gap: 20px;
+    text-align: center;
+    margin-top: -900px;
+  }
+
+  /* Remove absolute positions to allow stacking */
+  .experttennis,
+  .whp,
+  .fypp,
+  .gsn {
+    position: static;
+  }
+
+  .experttennis {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .whp {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+  }
+
+  .fypp {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .gsn {
+    width: 180px;
+    height: 45px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .sucstory {
+    height: auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sucstory2 {
+    font-size: 14px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .trusted1,
+  .trusted2 {
+    position: static;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-top: 10px;
+  }
+
+  .learnhow {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+    line-height: 1.5;
+  }
+
+.sucside {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* 🔥 evenly spaced buttons */
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .casestud,
+  .teststud,
+  .edustud {
+    position: static;
+    width: 85%;
+    max-width: 280px;
+    height: 48px;
+    font-size: 16px;
+    margin: 0; /* 🧹 remove extra margins */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .casestud p,
+  .teststud p,
+  .edustud p {
+    position: static;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1;
+  }
+  .testimony {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    gap: 30px;
+  }
+
+  .test1,
+  .test2,
+  .test3 {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    border: none;
+    text-align: center;
+  }
+
+  .test1 img,
+  .test2 img,
+  .test3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .test1 h1,
+  .test2 h1,
+  .test3 h1 {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.3;
+  }
+
+  .test1 p,
+  .test2 p,
+  .test3 p {
+    font-size: 15px;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+
+  .learnmore1,
+  .learnmore2,
+  .learnmore3 {
+    position: static;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+   .requestpart {
+    height: auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .request {
+    position: static;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 1px solid #196bde;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .request h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+
+  .request div {
+    position: static;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 10px;
+  }
+
+  .div2 {
+    position: static;
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .typename,
+  .typename2,
+  .typeemail,
+  .typenum {
+    position: static;
+    display: block;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .namecont,
+  .namecont2,
+  .emailcont,
+  .numcont,
+  #numlist {
+    position: static;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+
+  /* ✅ Country code dropdown and phone input stacked */
+  .typenum,
+  #numlist,
+  .numcont {
+    display: block;
+    width: 100%;
+  }
+
+  #numlist {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .numcont {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .request button {
+    position: static;
+    margin-top: 25px;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 40px;
+    background-color: #196bde;
+    color: white;
+    font-weight: bold;
+    border: none;
+  }
+
+  .requestpart p {
+    position: static;
+    margin-top: 20px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.4;
+    color: #333;
+  }
+  .faqs {
+    height: auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faqs h1 {
+    position: static;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  /* Stack all FAQ boxes vertically */
+  .lbox1, .lbox2, .lbox3, .lbox4,
+  .rbox1, .rbox2, .rbox3 {
+    position: static;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 15px;
+    height: auto;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  /* Text inside FAQ boxes */
+  .lbox1 p, .lbox2 p, .lbox3 p, .lbox4 p,
+  .rbox1 p, .rbox2 p, .rbox3 p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    width: 80%;
+  }
+
+  /* Circle + plus icons properly aligned */
+  .circle, #circ1, #circ2, #circ4 {
+    position: static;
+    height: 35px;
+    width: 35px;
+    margin: 0;
+    flex-shrink: 0;
+    border: 2px solid #83c0fc;
+  }
+
+  .ver {
+    height: 12px;
+    width: 2px;
+    background-color: #83c0fc;
+    margin: 7px auto 0 auto;
+  }
+
+  .hor {
+    height: 2px;
+    width: 12px;
+    background-color: #83c0fc;
+    margin: -7px auto 0 auto;
+  }
+
+  /* Slight spacing between the plus and text */
+  .lbox1 p, .rbox1 p {
+    padding-right: 10px;
+  }
+   .bottom {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+    gap: 40px; /* ✅ consistent, natural spacing between each section */
+  }
+
+  .products,
+  .bizsoln,
+  .programs,
+  .supportpt2,
+  .companypt2 {
+    position: static !important;
+    width: 100%;
+    max-width: 400px;
+  }
+.bizsoln{
+    /* border: 2px solid white; */
+    margin-top: -175px;
 }
+  /* Reset positions and center everything */
+  .products h1,
+  .productsitems,
+  .bizsoln h1,
+  .bizitems,
+  .programs h1,
+  .progitems,
+  .supportpt2 h1,
+  .supitems,
+  .companypt2 h1,
+  .comitems {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .products h1,
+  .bizsoln h1,
+  .programs h1,
+  .supportpt2 h1,
+  .companypt2 h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .productsitems,
+  .bizitems,
+  .progitems,
+  .supitems,
+  .comitems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    gap: 15px;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  #bottomone {
+    list-style: none;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+  }
+  .footer1 {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 30px 20px;
+    gap: 15px;
+  }
+
+  .bhfooter {
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  .footer1 p {
+    position: static;
+    font-size: 13px;
+    line-height: 1.5;
+    width: 100%;
+  }
+
+  .socials {
+    position: static;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .socials img {
+    width: 22px;
+    height: 22px;
+  }
 }
