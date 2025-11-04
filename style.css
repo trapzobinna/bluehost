@@ -17,11 +17,14 @@ a{
 }
 .nav-bar{
 background-color: white;
+/* border: 2px solid red; */
 width: 100%;
 height: 73px;
 display: flex;
  align-items: center; /* keeps vertical alignment centered */
   list-style-type: none;
+      font-family: 'Montserrat', sans-serif;
+
   position: relative; 
 }
 .nav-bar a{
@@ -87,7 +90,8 @@ li a{
     display: none;
     /* border: 2px solid blue; */
     position: absolute;
-    left: -200px;
+    left: -260px;
+    top: 55px;
 }
 #one::after{
     content: "";
@@ -128,7 +132,7 @@ li a{
     background-color: white;
     transition-timing-function: ease-in-out;
     cursor: pointer;
-    /* border: 2px solid red; */
+    border: 2px solid blue;
 }
 #two{
     position: relative;
@@ -139,9 +143,10 @@ li a{
     width:100vw;
     height: 350px;
     display: none;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     position: absolute;
-    left: -300px;
+    left: -370px;
+    top: 55px;
 }
 #two::after{
     content: "";
@@ -179,9 +184,10 @@ li a{
     width:100vw;
     height: 240px;
     display: none;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     position: absolute;
-    left: -420px;
+    left: -500px;
+    top: 55px;
 }
 #three::after{
     content: "";
@@ -218,9 +224,10 @@ li a{
     width:100vw;
     height: 240px;
     display: none;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     position: absolute;
-    left: -520px;
+    left: -620px;
+    top: 55px;
 }
 #four::after{
     content: "";
@@ -280,23 +287,28 @@ li a{
   justify-content: space-evenly;
   align-items: center; /* ✅ vertical alignment fix */
   position: absolute;
-  right: 20px; /* small inward offset */
+  right: 0; /* small inward offset */
   width: 25%;
   font-size: 16px;
-  margin-top: -25px;
+  margin-top: -30px;
   list-style-type: none;
+  /* border: 2px solid red; */
+}
+.get-started-btn {
+  background-color: #0c4a9c; /* Bluehost blue */
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.dropdown-content2{
-    width:100vw;
-    height: 300px;
-    display: none;
-    /* border: 2px solid blue; */
-    position: absolute;
-    right:-270px;
- 
-    transition: opacity 0.2s ease;
-}
+
+
+
 .dropdown-content3{
     background-color: white;
     position: absolute;
@@ -316,22 +328,23 @@ li a{
 }
 .mobile-right {
   position: absolute;
-  top: 29px;
+  top: 35px;
   right: 60px;
   display: flex;
   align-items: center;
   /* border: 2px solid blue; */
   justify-content: space-between; /* pushes Login left, Cart right */
-  width: 150px; /* adjust width to control how far apart they are */
+  width: 225px; /* adjust width to control how far apart they are */
   list-style: none;
   z-index: 100;
 }
 
 .logincl {
   /* border: 2px solid red; */
-  color: black;
-  font-size: 16px;
+  width: 22px;
+  height: 22px;
   cursor: pointer;
+  display: none;
 }
 
 .cart {
@@ -341,7 +354,13 @@ li a{
   cursor: pointer;
   
 }
-
+.help-mobile,
+.usd-mobile {
+  display: none; /* hidden on desktop */
+}
+.mobile-login-btn {
+  display: none;
+}
 .usd{
     position: relative;
     /* border: 2px solid red; */
@@ -568,16 +587,7 @@ li a{
 .right_tabs:hover::after{
     width: 100%;
 }
-.right_tabs:hover .dropdown-content2{
-    display: block;
-    background-color: white;
-    transition-timing-function: ease-in-out;
-    cursor: pointer;
-    /* border: 2px solid red; */
-    margin-top: 20px;
-    margin-right: 27px;
-    
-}
+
 /*navbar end*/
 
 .menu-toggle {
@@ -767,6 +777,7 @@ li a{
   width: 130px;
   height: auto;
   display: block;
+  margin-top: -80px;
 }
 
 
@@ -916,7 +927,9 @@ li a{
     margin-left: 20px;
     margin-top: 10px;
 }
-.listcard2{
+.listcard2,
+.listcard3,
+.listcard4{
     list-style-type: none;
     font-size: 16.5px;
     line-height: 30px;
@@ -929,7 +942,7 @@ li a{
 .marketing{
     font-size: 16.5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 10px;
     position: relative;
     left: -20px;
@@ -941,14 +954,16 @@ li a{
 .advance{
     font-size: 16.5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 10px;
+    /* border: 2px solid red; */
     position: relative;
     left: -20px;
 }
 .card2{
    position: relative;       /* remove absolute positioning */
-    top: 0;                   /* reset top offsets */
+    top: 0;
+    margin-top: -40px;                  /* reset top offsets */
     width: 360px;
     height: auto;             /* optional if content grows */
     border-radius: 10px;
@@ -2592,6 +2607,7 @@ html, body {
     top: 73px; /* sits below navbar */
     left: 0;
     z-index: 99;
+    
   }
 
   .nav-links.active {
@@ -2613,7 +2629,9 @@ html, body {
     display: block;
     width: 100%;
     padding: 12px 15px;
-    font-size: 16px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    /* border:2px solid red; */
     border-bottom: 1px solid #eee;
   }
 
@@ -2623,20 +2641,23 @@ html, body {
     align-items: center;
     position: absolute;
     top: 27.5px;
-    right: 60px; /* just before the hamburger */
+    right: 70px; /* just before the hamburger */
     justify-content: space-between; /* pushes Login left, Cart right */
-    width: 90px;
+    width: 60px;
     z-index: 180;
   }
   .mobile-right .logincl {
-    font-size: 15px;
-    color: black;
+  /* border: 2px solid red; */
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  display: block;
   }
 
 
   .mobile-right .cart {
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
     object-fit: contain;
     cursor: pointer;
     transition: transform 0.2s ease;
@@ -2647,17 +2668,53 @@ html, body {
   }
 
   /* Hide normal right-nav (Help + USD) on mobile */
-  .right-nav {
+  /* .right-nav {
     display: none !important;
   }
 
   .usd {
     display: none !important;
+  } */
+.help-mobile,
+  .usd-mobile {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #eee;
+    color: black;
+    background-color: white;
+  }
+  .mobile-login-btn {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: white;
+    /* border: 2px solid red; */
+  }
+
+  .login-btn {
+    width: 90%;
+    padding: 14px 0;
+    background-color: #0073e6; /* Bluehost-style blue */
+    color: white;
+font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+
+  /* Hide desktop right-nav Help + USD */
+  .right-nav {
+    display: none !important;
   }
 
   /* === DROPDOWN BEHAVIOR FIX FOR MOBILE === */
   .dropdown-content,
-  .dropdown-content2,
   .dropdown-content3 {
     position: static;
     display: none;
@@ -2690,6 +2747,9 @@ html, body {
         display: block;
         height: 40px;
         margin: 10px auto;
+    }
+    .subheader{
+      margin-top: 0;
     }
     /* === FIX PRICECARDS HEIGHT ON MOBILE === */
   .pricecards {
@@ -2760,7 +2820,9 @@ html, body {
   }
    .opec {
     padding: 20px;
-    border: 2px solid #196bde;
+    /* border: 2px solid #196bde; */
+            /* background-color: #e8edf3; */
+
   }
 .opech1 {
     font-size: 20px;
@@ -2871,6 +2933,12 @@ html, body {
     padding: 30px 20px;
     text-align: center;
     gap: 20px;
+    /* border: 2px solid red; */
+    /* background-color: #e8edf3; */
+            background-color: #dbf1fc;
+
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
   }
 
   /* Remove absolute positioning so flexbox can arrange them */
@@ -2919,6 +2987,10 @@ html, body {
     height: auto;
     padding: 30px 20px;
     text-align: center;
+        /* background-color: #e8edf3; */
+        background-color: #dbf1fc;
+        border-top: 2px solid white;
+
     gap: 20px;
   }
 
@@ -2970,7 +3042,11 @@ html, body {
     height: auto;
     padding: 30px 20px;
     text-align: center;
+    border-top: 2px solid white;
     gap: 20px;
+     background-color: #dbf1fc;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
   }
 
   /* Remove absolute positioning for stacking layout */
