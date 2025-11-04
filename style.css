@@ -2854,18 +2854,23 @@ font-size: 15px;
     padding: 20px 10px;
     position: relative;
   }
-
-  .card1,
-  .card2,
-  .card3 {
-    position: static;          /* stop using absolute positioning */
-    width: 90%;                /* responsive width */
-    max-width: 360px;          /* don’t exceed original desktop size */
-    height: auto;              /* adjust height naturally */
-    border-radius: 10px;
-    margin: 0 auto;            /* center the cards */
-  }
-
+  .box1{
+    /* border: 2px solid blue; */
+    /* position: relative;*/
+}
+.box1p{
+/* border: 2px solid red; */
+}
+.ppmonth1{ /* border: 2px solid green; */ position: absolute; top: 4.5%; left: 13%; 
+} 
+.savebox{ /* border: 2px solid red; */ top: 5%;
+ } 
+.duration1{ /* border: 2px solid red; */ position: absolute; left: 13%; top: 6.5%; 
+}
+ .renewal1{ /* border: 2px solid red; */ position: absolute; left: 13%; top: 7%;
+ } 
+.button1{ /* border: 2px solid red; */ position: absolute; top: 8%; left: 9%; width: 70%; left: 13%; 
+}
   .card2 .topbar {
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
