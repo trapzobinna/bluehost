@@ -2748,6 +2748,9 @@ font-size: 15px;
     top: 0;
     left: 10px;
   }
+  .mainheader{
+    width: 70%;
+  }
    .mainimage {
     position: relative;
     top: 20%;
