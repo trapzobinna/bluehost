@@ -2663,9 +2663,7 @@ html, body {
     transition: transform 0.2s ease;
   }
 
-  .mobile-right .cart:hover {
-    transform: scale(1.1);
-  }
+
 
   /* Hide normal right-nav (Help + USD) on mobile */
   /* .right-nav {
