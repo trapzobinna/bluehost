@@ -748,7 +748,7 @@ li a{
   left: 7%;                   /* replaces 84px with flexible spacing */
   top: 30%;                   /* scales with height of parent */
   color: white;
-  font-size: clamp(11px, 1.5vw, 20px); /* smoothly resizes text */
+  font-size: clamp(12px, 1.5vw, 20px); /* smoothly resizes text */
   list-style-type: square;
   line-height: 1.5; 
   border-right: 1px solid white;
@@ -796,7 +796,7 @@ li a{
     border-radius: 5px;
     box-shadow: none;
     color: #1a4884;
-    font-size: clamp(9px, 1.5vw, 16px);
+    font-size: clamp(13px, 1.5vw, 16px);
     font-weight: bolder;
     border: none;
     cursor: pointer;
