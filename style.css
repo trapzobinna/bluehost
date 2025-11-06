@@ -753,7 +753,7 @@ li a{
   margin: 0 auto;         /* centers the hero section */
   padding: 20px;
   box-sizing: border-box;
-  border: 2px solid red;  
+  /* border: 2px solid red;   */
 }
 
 .main {
