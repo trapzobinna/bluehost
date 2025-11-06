@@ -2904,7 +2904,7 @@ font-size: 15px;
     position: relative;
   }
   .box1{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     position: relative;
 }
 .listcard1{
@@ -2934,11 +2934,11 @@ font-size: 15px;
  .renewal1{ /* border: 2px solid red; */ 
   position: absolute;
    left: -30%;
-   top: 13%;
+   top: 17%;
  } 
 .button1{ /* border: 2px solid red; */ 
   position: absolute;
-   top: 20%;
+   top: 24%;
     width: 80%; 
     left: 7%; 
 }
