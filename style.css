@@ -109,22 +109,57 @@ li a{
     display: flex;
     flex-direction: column;
     /* gap: 5px; */
-    width: 200px;
+    width: 250px;
     top: 60px;
         position: absolute;
     left: 175px;
+    line-height: 25px;
   }
-.hostinghead{
-    font-size: 20px;
+  .tools-part{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    top: 60px;
+    left: 425px;
+    position:absolute;
+    line-height: 25px;
+  }
+  .email-part{
+     /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    top: 60px;
+    left: 675px;
+    position:absolute;
+    line-height: 25px;
+  }
+.hostinghead,
+.webtoolshead,
+.emailhead{
+    font-size: 18px;
     color: black;
-    font-weight: lighter;
+    font-weight: bold;
     position: absolute;
     top: 30px;
+}
+.hostinghead{
     left: 175px;
+}
+
+.webtoolshead{
+    left: 425px;
+}
+.emailhead{
+  left: 675px;
 }
 .hostdescription{
   color: #333;
+  font-family: 'Montserrat';
+  font-size: 11px;
 }
+
 .one{
   color: #196bde !important;
   /* border: 2px solid green; */
@@ -144,7 +179,7 @@ li a{
     background-color: white;
     transition-timing-function: ease-in-out;
     cursor: pointer;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 #two:hover{
     color: #196bde;
