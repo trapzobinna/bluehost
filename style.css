@@ -110,15 +110,24 @@ li a{
     flex-direction: column;
     /* gap: 5px; */
     width: 200px;
-    margin-top: 50px;
-    margin-left: 15px;
-}
+    top: 60px;
+        position: absolute;
+    left: 175px;
+  }
 .hostinghead{
     font-size: 20px;
     color: black;
     font-weight: lighter;
     position: absolute;
     top: 30px;
+    left: 175px;
+}
+.hostdescription{
+  color: #333;
+}
+.one{
+  color: #196bde !important;
+  /* border: 2px solid green; */
 }
 @media (hover: hover) and (pointer: fine) {
   /* your desktop hover effects go here */
@@ -910,7 +919,7 @@ li a{
     width: 100%;
     height: 280px;
     /* border: 2px solid blue; */
-    /* position: relative;*/
+    position: relative;
 }
 .basic{
     margin-top: 25px;
@@ -924,6 +933,7 @@ li a{
     margin-top: 13px;
     margin-left: 20px;
 }
+
 .ppmonth1{
     position: absolute;
     top: 90px;
@@ -1007,6 +1017,7 @@ li a{
 .box3{
     width: 100%;
     height: 200px;
+    position: relative;
 }
 .Security{
     font-size: 16.5px;
@@ -2859,20 +2870,46 @@ font-size: 15px;
   }
   .box1{
     /* border: 2px solid blue; */
-    /* position: relative;*/
+    position: relative;
+}
+.listcard1{
+  margin-top: -20px;
+}
+.box2{
+
+}
+.box3{
+  margin-top: 30px;
 }
 .box1p{
 /* border: 2px solid red; */
 }
-.ppmonth1{ /* border: 2px solid green; */ position: absolute; top: 4.5%; left: 13%; 
+.ppmonth1{ /* border: 2px solid green; */
+   position: absolute; 
+   top: 4.5%; 
+   left: 6%; 
 } 
-.savebox{ /* border: 2px solid red; */ top: 5%;
+.savebox{ 
+  /* border: 2px solid red; */
+   top: 3%;
+   position: absolute;
+   left: 70%;
  } 
-.duration1{ /* border: 2px solid red; */ position: absolute; left: 13%; top: 6.5%; 
+.duration1{ /* border: 2px solid red; */
+   position: absolute; 
+   left: 6%; 
+   top: 6.5%; 
 }
- .renewal1{ /* border: 2px solid red; */ position: absolute; left: 13%; top: 7%;
+ .renewal1{ /* border: 2px solid red; */ 
+  position: absolute;
+   left: -30%;
+   top: 13%;
  } 
-.button1{ /* border: 2px solid red; */ position: absolute; top: 8%; left: 9%; width: 70%; left: 13%; 
+.button1{ /* border: 2px solid red; */ 
+  position: absolute;
+   top: 20%;
+    width: 80%; 
+    left: 7%; 
 }
   .card2 .topbar {
     border-top-left-radius: 9px;
@@ -2882,6 +2919,7 @@ font-size: 15px;
   /* Optional — shrink text slightly on mobile for balance */
   .card1 *, .card2 *, .card3 * {
     font-size: 0.95rem;
+    position: relative;
   }
    .opec {
     padding: 20px;
