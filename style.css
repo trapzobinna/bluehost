@@ -2904,21 +2904,17 @@ font-size: 15px;
     position: relative;
   }
   .box1{
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     position: relative;
 }
 .listcard1{
   margin-top: -20px;
 }
-.box2{
 
-}
 .box3{
   margin-top: 30px;
 }
-.box1p{
-/* border: 2px solid red; */
-}
+
 .ppmonth1{ /* border: 2px solid green; */
    position: absolute; 
    top: 4.5%; 
